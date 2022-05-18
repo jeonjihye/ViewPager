@@ -25,4 +25,15 @@ class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
         }
     }
 
+//    각 페이지 별 제목부여 함수
+    override fun getPageTitle(position: Int): CharSequence? {
+
+        return when(position){
+            0 -> "이름"
+            1 -> "연락처"
+            else -> "인삿말"
+        }
+    }
+
+
 }
