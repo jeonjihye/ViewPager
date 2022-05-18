@@ -16,6 +16,7 @@ class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getCount() = 3
 
     // 각 위치에 맞는 Fragment 객체들을 리턴
+    // 보통 return when 문법사용
     override fun getItem(position: Int): Fragment {
         return when(position){
             0 -> NameFragment()
